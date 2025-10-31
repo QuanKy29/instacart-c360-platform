@@ -32,12 +32,12 @@ Power BI / ML models
 
 ```mermaid
 flowchart TD
-    A[📂 CSV Raw Data] --> B[(PostgreSQL - Raw Layer)]
-    B --> C[🧱 dbt Staging (Cleaned Models)]
-    C --> D[⚙️ dbt Silver (Fact Tables)]
-    D --> E[💎 dbt Gold (Analytics Marts)]
-    E --> F[🐍 Python Export to CSV]
-    F --> G[📊 Power BI Dashboard / 🤖 ML Models]
+    A[CSV Raw Data] --> B[(PostgreSQL - Raw Layer)]
+    B --> C[dbt Staging (Cleaned Models)]
+    C --> D[dbt Silver (Fact Tables)]
+    D --> E[dbt Gold (Analytics Marts)]
+    E --> F[Python Export to CSV]
+    F --> G[Power BI Dashboard / ML Models]
 
 ## 🗂️ Repository Structure  
 instacart-c360-platform/
