@@ -9,3 +9,11 @@ ml/ml/exported_data/
 
 # Ignore exported artifacts
 ml/**/exported_data/
+
+# dbt build artifacts
+dbt/target/
+dbt/dbt_packages/
+# ML exports (large artifacts)
+ml/**/exported_data/
+# OS
+.DS_Store
