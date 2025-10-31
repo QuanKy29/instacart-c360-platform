@@ -1,0 +1,11 @@
+.DS_Store
+warehouse/data/
+data/
+logs/
+
+# Ignore exported artifacts
+ml/exported_data/
+ml/ml/exported_data/
+
+# Ignore exported artifacts
+ml/**/exported_data/
