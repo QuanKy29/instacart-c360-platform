@@ -9,3 +9,17 @@ ml/ml/exported_data/
 
 # Ignore exported artifacts
 ml/**/exported_data/
+
+# dbt build artifacts
+dbt/target/
+dbt/dbt_packages/
+# ML exports (large artifacts)
+ml/**/exported_data/
+# OS
+.DS_Store
+
+# dbt build artifacts
+/dbt/target/
+/dbt/logs/
+/instacart_c360/target/
+/instacart_c360/logs/
