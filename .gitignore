@@ -17,3 +17,9 @@ dbt/dbt_packages/
 ml/**/exported_data/
 # OS
 .DS_Store
+
+# dbt build artifacts
+/dbt/target/
+/dbt/logs/
+/instacart_c360/target/
+/instacart_c360/logs/
