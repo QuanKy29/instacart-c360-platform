@@ -29,16 +29,14 @@ Power BI / ML models
 ---
 
 
-## 📊 Data Flow Diagram  
+## 📊 Data Flow Overview  
 
-```mermaid
-flowchart TD
-    A[CSV Raw Data] --> B[(PostgreSQL - Raw Layer)]
-    B --> C[dbt Staging (Cleaned Models)]
-    C --> D[dbt Silver (Fact Tables)]
-    D --> E[dbt Gold (Analytics Marts)]
-    E --> F[Python Export to CSV]
-    F --> G[Power BI Dashboard / ML Models]
+**Data journey through the pipeline:**
+1. Raw Instacart CSV files are loaded into **PostgreSQL (Docker)**.  
+2. dbt **staging models** clean and standardize raw data.  
+3. dbt **silver models** join and create fact tables.  
+4. dbt **gold models** aggregate analytics marts.  
+5. Final tables are **exported via Python** to CSV for **Power BI** and **Machine Learning**.
 
 ## 🗂️ Repository Structure  
 instacart-c360-platform/
